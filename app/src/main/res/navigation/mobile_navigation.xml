@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/filmFragment">
+
+<!--    <fragment-->
+<!--        android:id="@+id/addFilmFragment"-->
+<!--        android:name="com.example.android3hw2.ui.AddFilmFragment"-->
+<!--        android:label="fragment_add_film"-->
+<!--        tools:layout="@layout/fragment_add_film" />-->
+
+    <fragment
+        android:id="@+id/filmFragment"
+        android:name="com.example.android3hw2.ui.film.FilmFragment"
+        android:label="fragment_basic"
+        tools:layout="@layout/fragment_film" />
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.android3hw2.ui.filmDesc.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/saveFilmFragment"
+        android:name="com.example.android3hw2.ui.saveFilms.SaveFilmFragment"
+        android:label="fragment_save_room"
+        tools:layout="@layout/fragment_save_film" />
+</navigation>
